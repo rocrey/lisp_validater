@@ -13,6 +13,8 @@ public class lisp_validator {
             }
             if (counter < 0) break;
         }
+        //Java normally returns 0 if the program executed successfully without fail
+        //So returned 1 here to indicated the program failed.
         if (counter != 0) System.exit(1);
         else System.exit(0);
     }
